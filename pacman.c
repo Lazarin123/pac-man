@@ -11,11 +11,11 @@ int main () {
         exit (1);
     }
 
-    for (int i = 0; i < 4; i++){
+    for (int i = 0; i < 5; i++){
     fscanf(f, "%s", mapa[i]);
     }
 
-    for (int i = 0; i < 4; i++){
+    for (int i = 0; i < 5; i++){
         printf("%s\n", mapa[i]);
     }
     fclose(f);
