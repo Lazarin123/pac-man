@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+char mapa[5] [10+1];
+
 int main () {
-    char mapa[5] [10+1];
 
     FILE* f;
     f = fopen("mapa.txt", "r");  
