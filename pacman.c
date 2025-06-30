@@ -5,7 +5,7 @@ int main () {
     char mapa[5] [10+1];
 
     FILE* f;
-    f = fopen("mapa.txt", "r");
+    f = fopen("mapa.txt", "r");  
     if (f == 0) {
         printf("Erro ao abrir o arquivo\n");
         exit (1);
