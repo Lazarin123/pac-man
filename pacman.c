@@ -1,12 +1,18 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 
 int main () {
     char mapa[5] [10];
 
-    mapa[0][0] = '|';
-    mapa[4][9] = '@';
+    FILE* f;
+    f = fopen("mapa.txt", "r");
+    if (f == 0) {
+        printf("Erro ao abrir o arquivo\n");
+        exit (1);
+    }
 
-    printf("%c %c", mapa[0][0], mapa[4][9]);
+    for (int i = 0; i < 4; i++){
+    fscanf(f, "s", mapa[i]);
+    }
 
 }
