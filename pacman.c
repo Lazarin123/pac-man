@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main () {
-    char mapa[5] [10];
+    char mapa[5] [10+1];
 
     FILE* f;
     f = fopen("mapa.txt", "r");
@@ -12,7 +12,12 @@ int main () {
     }
 
     for (int i = 0; i < 4; i++){
-    fscanf(f, "s", mapa[i]);
+    fscanf(f, "%s", mapa[i]);
     }
+
+    for (int i = 0; i < 4; i++){
+        printf("%s\n", mapa[i]);
+    }
+    fclose(f);
 
 }
