@@ -1,4 +1,4 @@
-#include "mapa.h";
+#include "mapa.h"
 #include <stdio.h>
 #include <stdlib.h>
 
