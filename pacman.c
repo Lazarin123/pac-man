@@ -21,17 +21,14 @@ void move(char direcao){
         m.matriz[x][y-1] = '@';
         heroi.y--;
         break;
-
         case 'w':
         m.matriz[x-1][y] = '@';
         heroi.x--;
         break;
-
         case 's':
         m.matriz[x+1][y] = '@';
         heroi.x++;
         break;
-
         case 'd':
         m.matriz[x][y+1] = '@';
         heroi.y++;
