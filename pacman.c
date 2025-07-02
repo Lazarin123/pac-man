@@ -18,19 +18,19 @@ void move(char direcao){
 
     switch (direcao) {
         case 'a': 
-        m.matriz[x][y-1] = '@';
+        m.matriz[heroi.x][heroi.y-1] = '@';
         heroi.y--;
         break;
         case 'w':
-        m.matriz[x-1][y] = '@';
+        m.matriz[heroi.x-1][heroi.y] = '@';
         heroi.x--;
         break;
         case 's':
-        m.matriz[x+1][y] = '@';
+        m.matriz[heroi.x+1][heroi.y] = '@';
         heroi.x++;
         break;
         case 'd':
-        m.matriz[x][y+1] = '@';
+        m.matriz[heroi.x][heroi.y+1] = '@';
         heroi.y++;
         break;
     }
