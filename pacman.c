@@ -26,7 +26,7 @@ void lemapa() {
         exit (1);
     }
    
-    fscanf(f, "%d %d", &m.linhas, &m.colunas);
+    fscanf(f, "%d %d", &(m.linhas), &(m.colunas));
 
     alocamapa();
     
