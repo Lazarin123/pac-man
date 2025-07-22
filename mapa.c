@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void andandomapa(MAPA* m, int xorigem, int yorigem, int xdestino, 
+    int ydestino) {
+      char personagem = m->matriz[xorigem][yorigem];
+      m->matriz[xdestino][ydestino] = personagem;
+      m->matriz[xorigem][yorigem] = '.';
+}
+
 int ehvalida(MAPA* m, int x, int y) {
     if(x >= m->linhas)
         return 0;

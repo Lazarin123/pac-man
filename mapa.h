@@ -21,3 +21,5 @@ void imprimemapa(MAPA* m);
 
 int ehvalida(MAPA* m, int x, int y);
 int ehvazia(MAPA* m, int x, int y);
+void andandomapa(MAPA* m, int xorigem, int yorigem, int xdestino, 
+    int ydestino);
