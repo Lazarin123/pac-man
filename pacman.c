@@ -10,11 +10,17 @@ int acabou() {
    return 0;  
 }
 
+int ehdirecao(char direcao) {
+    return direcao == 'a' ||
+        direcao == 'w' ||
+        direcao == 's' ||
+        direcao == 'd';
+}
+
 void move(char direcao){
     
-    if (direcao != 'a' && direcao != 'd' && 
-        direcao != 's' && direcao != 'w') 
-            return;
+    if(!ehdirecao(direcao))
+        return;
 
     int proximox = heroi.x;
     int proximoy = heroi.y;
