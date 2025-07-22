@@ -40,11 +40,10 @@ void move(char direcao){
         break;
     }
 
-    if(proximox >= m.linhas)
+    if(!ehvalida(&m, proximox, proximoy))
         return;
-    if(proximoy >= m.colunas)
-        return;    
-    if(m.matriz[proximox][proximoy] != '.')
+
+    if(!ehvazia(&m, proximox, proximoy))
         return;
 
     m.matriz [proximox][proximoy] = '@';

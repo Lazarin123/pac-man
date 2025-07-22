@@ -18,3 +18,6 @@ void liberamapa(MAPA* m);
 void alocamapa(MAPA* m);
 void lemapa(MAPA* m);
 void imprimemapa(MAPA* m);
+
+int ehvalida(MAPA* m, int x, int y);
+int ehvazia(MAPA* m, int x, int y);
