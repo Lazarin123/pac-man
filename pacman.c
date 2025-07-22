@@ -48,7 +48,8 @@ void move(char direcao){
 
     andandomapa(&m, heroi.x, heroi.y, 
         proximox, proximoy);
-
+    heroi.x = proximox;
+    heroi.y = proximoy;
 }
 
 int main () {
